@@ -1,15 +1,19 @@
 ---
 layout: default
+title: Eat, Ship and You're Home
 ---
 
-<div class="callout">
-  <p>testing</p>
-  <ul>
+<h2>pages</h2>
+{% for page in site.pages %}
+<h3>
+    {{ page.title }}
+</h3>
+{% endfor %}
+<h2>posts</h2>
+<ul>
     {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
     {% endfor %}
-  </ul>
-
-</div>
+</ul>

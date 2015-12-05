@@ -1,0 +1,8 @@
+{
+  "name": "eat-ship-and-go-home",
+  "version": "0.0.1",
+  "dependencies": {
+    "foundation-sites": "~6.0.5"
+  },
+  "private": true
+}
