@@ -29,10 +29,18 @@ This is your stylesheet. Writing good style code is more art than science. The l
 
 #### Compiler: Coffeescript
 
-I don't know a god damned thing about coffeescript. I should get on that. People swear by it.
+I don't know a god damned thing about coffeescript. I should get on that. People swear by it. I think?
 
 ### Logic
 
 #### Framework: Jekyll, the CMS du jour.
 
+#### Compiler: Rails
+
+This might be my personal favorite code, where you build data structures and set forward rules on how they work.
+
 ### Environment
+
+#### Framework: NPM, Gulp, Jekyll
+
+This is sort of somethign that I made up - it's a mash of system programming languages and build tools. In a sense, these are the compilers themselves. Environment code is setting up a development enviornment that a programmer with less experience can work in to get something that's actually useful out of them.

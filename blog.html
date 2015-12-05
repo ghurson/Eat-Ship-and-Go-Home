@@ -1,0 +1,16 @@
+---
+title: blog
+layout: default
+permalink: blog/
+---
+
+<h2>Blog home</h2>
+<p>this is where the thoughts live</p>
+
+<div class="small-up-1 medium-up-2">
+    {% for post in site.posts %}
+    <div class="column">
+        {{ post.title }}
+    </div>
+    {% endfor %}
+</div>
