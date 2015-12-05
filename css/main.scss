@@ -46,7 +46,9 @@ $on-laptop:        800px;
 // pull foundation files
 
 @import "../_sass/foundation-settings";
-@import "../bower_components/foundation-sites/foundation-sites";
+@import "../bower_components/foundation-sites/scss/foundation";
+@include foundation-everything;
+
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 //@import
