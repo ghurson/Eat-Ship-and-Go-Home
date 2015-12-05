@@ -1,3 +1,35 @@
 <footer>
-  <h2>es&gh</h2>
+    <div class="row">
+        <div class="column">
+            <h2>es&gh</h2>
+        </div>
+
+        <div class="column medium-6">
+
+            <h2>pages</h2>
+            <ul>
+                {% for page in site.pages %}
+                <li>
+                    <a href="{{ page.url }}">
+                        {{ page.title }} {{ page.url }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="column medium-6">
+
+            <h2>posts</h2>
+            <ul>
+                {% for post in site.posts %}
+                <li>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+
+
+        </div>
+
+    </div>
 </footer>

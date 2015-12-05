@@ -3,7 +3,7 @@
     <ul class="dropdown menu" data-dropdown-menu>
       <li class="menu-text">Eat, Ship and Go Home</li>
       {% for page in site.pages %}
-        <li><a href="#">{{page.title}}</a></li>
+        <li><a href="{{ page.url }}">{{page.title}}</a></li>
       {% endfor %}
     </ul>
   </div>

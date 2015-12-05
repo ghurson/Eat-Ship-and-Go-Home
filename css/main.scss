@@ -44,17 +44,19 @@ $on-laptop:        800px;
 }
 
 // pull foundation files
+// this takes too long right now, we're going to attach a standard
+// stylesheet - but when we modify the scss, we will re-attach
 
-@import "../_sass/foundation-settings";
-@import "../bower_components/foundation-sites/scss/foundation";
-@include foundation-everything;
+//@import "../_sass/foundation-settings";
+//@import "../bower_components/foundation-sites/scss/foundation";
+//@include foundation-everything;
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-//@import
-//        "base",
-//        "layout",
-//        "syntax-highlighting",
-//        "footer",
-//        "style"
-//;
+@import
+        "base",
+        "layout",
+        "syntax-highlighting",
+        "footer",
+        "style"
+;

@@ -17,3 +17,6 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+
+# Exclude
+exclude: [feed.xml, readme.md, /css/main.css]
