@@ -1,17 +1,16 @@
 footer {
-  color: white;
   background: $light-gray;
   text-align: center;
+  border-top: 1px solid $gray;
 
   ul {
     list-style-type: none;
   }
 
   h2 {
-    color: black;
 
     &.footer-title {
-      color: transparentize(black, .6);
+      font-family: $display-font;
       padding-top: 20px;
     }
 
