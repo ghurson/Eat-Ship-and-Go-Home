@@ -1,16 +1,15 @@
 <div class="top-bar">
-  <div class="top-bar-left">
-    <ul class="dropdown menu" data-dropdown-menu>
-      <li class="menu-text">es & gh</li>
-      {% for page in site.pages %}
-        <li><a href="{{ page.url }}">{{page.title}}</a></li>
-      {% endfor %}
-    </ul>
-  </div>
-  <div class="top-bar-right show-for-large">
-    <ul class="menu">
-      <li><input type="search" placeholder="Search"></li>
-      <li><button type="button" class="button">Search</button></li>
-    </ul>
-  </div>
+    <div class="row">
+        <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li class="menu-text">es & gh</li>
+                {% for page in site.pages %}
+                <li><a href="{{ page.url }}">{{page.title}}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="top-bar-right show-for-large">
+            <p>There was once search here. There may be again, too.</p>
+        </div>
+    </div>
 </div>

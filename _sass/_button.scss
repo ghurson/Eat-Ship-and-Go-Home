@@ -1,0 +1,23 @@
+.button {
+
+  color: $blue;
+
+  &.ghost {
+    background: white;
+    border: 1px solid $blue;
+    border-radius: 5px;
+  }
+
+  &.center {
+    margin: auto;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: $blue;
+  }
+  
+}

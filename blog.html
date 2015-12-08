@@ -4,13 +4,21 @@ layout: default
 permalink: blog/
 ---
 
-<h2>Blog home</h2>
-<p>this is where the thoughts live</p>
+<div class="row">
+    <h2>Blog home</h2>
+    <p>This here is where the thoughts live</p>
+</div>
 
-<div class="small-up-1 medium-up-2">
+<div class="row small-up-1 medium-up-2">
     {% for post in site.posts %}
     <div class="column">
-        {{ post.title }}
+        <div class="callout">
+            <h5>{{ post.title }}</h5>
+            {{ post.excerpt }}
+            <div class="row text-center">
+            <a href="{{ post.url }}" class="button ghost center">Read More</a>
+            </div>
+        </div>
     </div>
     {% endfor %}
 </div>
