@@ -1,15 +1,16 @@
-<div class="top-bar">
-    <div class="row">
-        <div class="top-bar-left">
-            <ul class="dropdown menu" data-dropdown-menu>
-                <li class="menu-text">es & gh</li>
+<header>
+    <div class="row text-center">
+        <div class="column large-3 logotype">
+            <h1>es & gh</h1>
+        </div>
+
+        <div class="column large-9 menu">
+            <ul>
                 {% for page in site.pages %}
-                <li><a href="{{ page.url }}">{{page.title}}</a></li>
+                <li><a href="{{ page.url }}">[{{page.url}}]</a><br /><small>{{ page.url }}</small></li>
                 {% endfor %}
             </ul>
         </div>
-        <div class="top-bar-right show-for-large">
-            <p>There was once search here. There may be again, too.</p>
-        </div>
     </div>
-</div>
+
+</header>
