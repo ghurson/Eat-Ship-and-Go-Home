@@ -1,5 +1,7 @@
 # Wordpress
 
+Wordpress is an application masquerading as a framework. It's original intention was to create an online environment that people could customize. Think of a really big, fancy myspace account. It became very popular, and eventually was released as an open-source blogging platform. In the decade since that a community has grown around building up the Wordpress experience that draws from some of the best and brightest engineers all over the country. The result is a robust system that has greatly expanded on the core functions of the Wordpress blogging system.
+
 ## Templating
 
 Wordpress uses templates to display their sites. It's sort of like a view layer, but it completely isn't. That's like half the reason seasoned devs don't like working with Wordpress. Soon, you won't like it for the same reason. For now, you're going to use it to learn how to put together complex coding environments.
