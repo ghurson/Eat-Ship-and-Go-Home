@@ -21,6 +21,33 @@ The way wordpress templates work at the top level is what's known as the *templa
 
 When a browser sends a request to a Wordpress installation, the WP installation scans the url, checking it against known post types, taxonomies and other keywords and, based on those parameters, will choose a template to display. This set of rules is based on the template heirarchy. Study it, know it.
 
+### Pages
+
+The content and structure of a Wordpress site is set by the information in the database. When a user creates a page in a Wordpress installation, they are creating a "post object" in the database. When that page is requested by a user through a URL request, what they are seeing is a template file that is loaded based on the *rules of the template* with the appropriate variables in place.
+
+### Arrays
+
+In order to build out Wordpress templates, one must be comfortable with the concept of an array.
+
+
+{% highlight php %}
+
+<?php
+
+$array = array(1, 2, 3, 4);
+
+foreach($array as $item):
+    
+    print $item;
+    
+endforeach;
+
+?>
+
+{% endhighlight %}
+
+This block would print out "1234" in your html document. [link to docs here]
+
 ## Logic
 
 ### Wordpress Automagication
