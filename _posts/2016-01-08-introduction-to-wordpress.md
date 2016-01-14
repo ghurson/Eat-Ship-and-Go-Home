@@ -48,6 +48,51 @@ endforeach;
 
 This block would print out "1234" in your html document. [link to docs here]
 
+### The Wordpress Development Tango
+
+There are three primary steps to building out sites in Wordpress. 
+
+- Get the content in the database 
+- Get the content out of the database 
+- Display the content in your template
+ 
+Accomplishing these tasks requires a little planning for the non-blog site. In a development sense, the steps involved here are
+
+- Create a place to house data
+- Configure your metadata (using Advanced Custom Fields)
+- Input your data
+- Locate / Create the template that you're going to use to display the information
+- Query the database
+- Sync up your data with an HTML structure.
+
+For instance, a static html block may look as such:
+
+{% highlight html %}
+
+<div class='person_excerpt'>
+    <h2>John Doe</h2>
+    <p>
+        Email: <a href='mailto: jdoe@email.com'>jdoe@email.com <br />
+        Phone: <a href='tel: 555-555-4242'>555-555-4242</a>
+    </p>
+    
+    <p><a href='#'>Learn More</a></p>
+    
+</div>
+
+{% endhighlight %}
+
+Now, lets say that the above segment is an entry in a directory that has been created for use on a website. We're not sure how many people are going to be listed in this directory - but we know there are going to be many. We also know that each of these people is going to have their own page on the site. So, we need to create a data environment where a client can create pages for the people that are going to be listed on the site. In order to accomplish this, we're going to need to define a custom post type. This is the "place to house the data" from the above steplist (not all custom data requirements will need a custom post type). 
+
+By default, any post object in wordpress is going to have the same data fields. This will include a title, content, excerpt, featured image, taxonomy information, author and url information (aka the permalink). There are a few others, but we're going to focus on these for now. Right away, we can see an issue here - how are we supposed to define an email address and a phone number? Enter the "Custom Field". We use a plugin called Advanced Custom Fields to configure a post's metadata. It is very well documented, I cannot recommend reading the docs enough.
+
+By configuring the custom fields on your post type, you can add fields for the client to enter a phone number and an email address directly into the post data.
+
+
+
+
+
+
 ## Logic
 
 ### Wordpress Automagication
