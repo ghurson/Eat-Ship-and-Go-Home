@@ -133,4 +133,15 @@ class Display {
 
 ?>
 
+<?php
+
+// this would be in a different file
+
+TSD\Display::say_hi_to_admin();
+
+?>
+
+
 {% endhighlight %}
+
+The above code snippet could be placed anywhere on the page to send a message to anyone on the site who is logged in. These functions can be very helpful when you need to attach logic to a given command, without cluttering up your display files. It's important to keep a neat display file, and to keep your helper functions tucked away in your display classes. This will allow you to deliver a rich web experience without compromising the readability of your template files. This will also allow you to keep your structure flexable, for when people inevitably start requesting substantive changes to your template layout.
