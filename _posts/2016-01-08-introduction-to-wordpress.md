@@ -13,6 +13,10 @@ The primary function of Wordpress that you don't see is the organization of the 
 
 That is where you come in. What has been sold to the client is a few pictures of a website and a whole lot of promises. It is up to you to find the relationships between the content you have been provided, the content that you find in the design you are given, and the content on the client's contract with us. You are encouraged to ask many questions about this. 
 
+## PHP
+
+So just what the heck is PHP anyways?
+
 ## Templating
 
 Wordpress uses templates to display their sites. It's sort of like a view layer, but it completely isn't. That's like half the reason seasoned devs don't like working with Wordpress. Soon, you won't like it for the same reason. For now, you're going to use it to learn how to put together complex coding environments.
