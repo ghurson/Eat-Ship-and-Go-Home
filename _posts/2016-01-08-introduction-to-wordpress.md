@@ -15,7 +15,9 @@ That is where you come in. What has been sold to the client is a few pictures of
 
 ## PHP
 
-So just what the heck is PHP anyways?
+PHP is a language that is designed to work with html on apache servers. The way that we utilize it is to communicate with a server, allowing us to retrieve and manipluate information that is stored in a database. As a jr. front-end developer, you aren't going to be getting very heavy into PHP. Most of what you're going to be doing is making requests through helper functions. 
+
+In a document, PHP lives alongside HTML. In the order 
 
 ## Templating
 
@@ -149,3 +151,46 @@ TSD\Display::say_hi_to_admin();
 {% endhighlight %}
 
 The above code snippet could be placed anywhere on the page to send a message to anyone on the site who is logged in. These functions can be very helpful when you need to attach logic to a given command, without cluttering up your display files. It's important to keep a neat display file, and to keep your helper functions tucked away in your display classes. This will allow you to deliver a rich web experience without compromising the readability of your template files. This will also allow you to keep your structure flexable, for when people inevitably start requesting substantive changes to your template layout.
+
+# Glossary
+
+Functions
+
+Variables
+
+Request
+
+Query
+
+Loop
+
+Array
+
+Object
+
+Notation
+
+Syntax
+
+Class
+
+Constructor
+
+Structure
+
+Enviornment
+
+Build Tool
+
+Helper Function
+
+Declare a Variable
+
+Document
+
+Server Side
+
+Client Side
+
+Repository
+
