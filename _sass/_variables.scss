@@ -1,3 +1,14 @@
 $blue: #2199e8;
 $gray: #c0c0c0;
-$light-gray: #ededed;
+$light-gray: #f5f5f5;
+
+
+@mixin transition-all(){
+  transition: all 250ms ease-in-out;
+}
+
+@mixin center-content(){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

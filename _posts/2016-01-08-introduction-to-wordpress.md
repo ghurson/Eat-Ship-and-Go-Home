@@ -15,9 +15,9 @@ That is where you come in. What has been sold to the client is a few pictures of
 
 ## PHP
 
-PHP is a language that is designed to work with html on apache servers. The way that we utilize it is to communicate with a server, allowing us to retrieve and manipluate information that is stored in a database. As a jr. front-end developer, you aren't going to be getting very heavy into PHP. Most of what you're going to be doing is making requests through helper functions. 
+PHP is a language that is designed to work with html on apache servers. The way that we utilize it is to communicate with a server, allowing us to retrieve and manipulate information that is stored in a database. As a jr. front-end developer, your initial interactions with PHP will be limited to making requests through helper functions. As you develop experience working through the patterns of development, you will use PHP to customize your build process, refining your structures and building elegant code.
 
-In a document, PHP lives alongside HTML. In the order 
+In a document, PHP lives alongside HTML. In the order of rendering a page, the PHP is calculated first, as a server-side operation. The browser goes from top to bottom of the document, and follows any instructions laid out for it. Essentially, PHP as you use it is going to be something to populate content inside templates. You will declare variables equal to the values of database queries, arrays of information, strings, numbers, values of true and false and more. From there, you create conditional statements to determine the circumstances in which your functions execute.
 
 ## Templating
 
@@ -29,7 +29,7 @@ When a browser sends a request to a Wordpress installation, the WP installation 
 
 ### Pages
 
-The content and structure of a Wordpress site is set by the information in the database. When a user creates a page in a Wordpress installation, they are creating a "post object" in the database. When that page is requested by a user through a URL request, what they are seeing is a template file that is loaded based on the *rules of the template* with the appropriate variables in place.
+The content and structure of a Wordpress site is set by the information in the database. When a user creates a page in a Wordpress installation, they are creating a "post object" in the database. When that page is requested by a user through a URL request, what they are seeing is a template file that is loaded based on the Template Heirarchy with the appropriate variables in place.
 
 ### Arrays
 
@@ -88,7 +88,7 @@ For instance, a static html block may look as such:
 
 {% endhighlight %}
 
-Now, lets say that the above segment is an entry in a directory that has been created for use on a website. We're not sure how many people are going to be listed in this directory - but we know there are going to be many. We also know that each of these people is going to have their own page on the site. So, we need to create a data environment where a client can create pages for the people that are going to be listed on the site. In order to accomplish this, we're going to need to define a custom post type. This is the "place to house the data" from the above steplist (not all custom data requirements will need a custom post type). 
+Now, lets say that the above segment is an entry in a directory that has been created for use on a website. We're not sure how many people are going to be listed in this directory - but we know there are going to be many. We also know that each of these people is going to have their own page on the site. So, we need to create a data environment inside Wordpress where a client can create pages for the people that are going to be listed on the website's frontend. In order to accomplish this, we're going to need to define a custom post type. This is the "place to house the data" from the above steplist (not all custom data requirements will need a custom post type). 
 
 By default, any post object in wordpress is going to have the same data fields. This will include a title, content, excerpt, featured image, taxonomy information, author and url information (aka the permalink). There are a few others, but we're going to focus on these for now. Right away, we can see an issue here - how are we supposed to define an email address and a phone number? Enter the "Custom Field". We use a plugin called Advanced Custom Fields to configure a post's metadata. It is very well documented, I cannot recommend reading the docs enough.
 
@@ -111,7 +111,7 @@ These are the global variables, and they are set based on which template has bee
 
 You can't talk about wordpress installations without talking about the loop. It sort of encapsulates the entire issue between WP and modern development environments. When wordpress scans the URL of the browser request and directs to a file in the theme directory - it also creates a query.
 
-In Wordpress parlance, "the query" is a PHP object created on page load. It has a whole bunch of stuff in it, but the really important parts are the query's post, and the associated objects and arguements. One of the strongest reasons to make use of the template heirarchy in Wordpress is that it customizes these queries based purely on the template used. So, if you create a file named archive-car.php, and then pulled up a wordpress installation that had a post type called "car", and that post type was configured to have archives, when you requested a url that fit into the "show the archive for the car's post type" - you're going to find that your query variable is put together with your posts and your helper functions in place. Replicating those queries is a very time intensive process and is strongly discouraged.
+In Wordpress parlance, "the query" is a PHP object created on page load. It has a whole bunch of stuff in it, but the really important parts are the query's post, and the associated objects and arguments. One of the strongest reasons to make use of the template heirarchy in Wordpress is that it customizes these queries based purely on the template used. So, if you create a file named archive-car.php, and then pulled up a wordpress installation that had a post type called "car", and that post type was configured to have archives, when you requested a url that fit into the "show the archive for the car's post type" - you're going to find that your query variable is put together with your posts and your helper functions in place. Replicating those queries is a very time intensive process and is strongly discouraged.
 
 ## Structure
 
@@ -150,7 +150,7 @@ TSD\Display::say_hi_to_admin();
 
 {% endhighlight %}
 
-The above code snippet could be placed anywhere on the page to send a message to anyone on the site who is logged in. These functions can be very helpful when you need to attach logic to a given command, without cluttering up your display files. It's important to keep a neat display file, and to keep your helper functions tucked away in your display classes. This will allow you to deliver a rich web experience without compromising the readability of your template files. This will also allow you to keep your structure flexable, for when people inevitably start requesting substantive changes to your template layout.
+The above code snippet could be placed anywhere on the page to send a message to anyone on the site who is logged in. These functions can be very helpful when you need to attach logic to a given command, without cluttering up your display files. It's important to keep a neat display file, and to keep your helper functions tucked away in your display classes. This will allow you to deliver a rich web experience without compromising the readability of your template files. This will also allow you to keep your structure flexible, for when people inevitably start requesting substantive changes to your template layout.
 
 # Glossary
 
@@ -182,7 +182,7 @@ Constructor
 
 Structure
 
-Enviornment
+Environment 
 
 Build Tool
 
@@ -198,3 +198,32 @@ Client Side
 
 Repository
 
+MVC Framework
+
+Model
+
+View
+
+Controller
+
+Order of Rendering
+
+Installation
+
+Stack
+
+Server
+
+Static
+
+Dynamic
+
+Advanced Custom Fields
+
+Flexible Layout
+
+Layout
+
+Frontend
+
+Backend

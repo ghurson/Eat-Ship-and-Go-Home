@@ -2,21 +2,20 @@
 title: blog
 layout: default
 permalink: blog/
+menu-subhead: home of the thought
+page-subhead: This is where the thoughts live
 ---
 
-<div class="row">
-    <h2>Blog home</h2>
-    <p>This here is where the thoughts live</p>
-</div>
-
-<div class="row small-up-1 medium-up-2">
+<div class="clearfix">
     {% for post in site.posts %}
-    <div class="column">
-        <div class="callout">
-            <h5>{{ post.title }}</h5>
-            {{ post.excerpt }}
-            <div class="row text-center">
-            <a href="{{ post.url }}" class="button ghost center">Read More</a>
+    <div class="blog-excerpt">
+        <div class="row">
+            <div class="column">
+                <h5>{{ post.title }}</h5>
+                {{ post.excerpt }}
+                <div class="row text-center">
+                    <a href="{{ post.url }}" class="button ghost center">Read More</a>
+                </div>
             </div>
         </div>
     </div>

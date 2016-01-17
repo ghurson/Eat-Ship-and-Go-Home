@@ -1,13 +1,25 @@
 <header>
     <div class="row text-center">
         <div class="column large-3 logotype">
-            <h1>e, s & gh</h1>
+            <h1>
+                <a href="/">
+                    e, s & gh
+                </a>
+            </h1>
         </div>
 
         <div class="column large-9 menu">
             <ul>
-                {% for page in site.pages %}
-                <li><a href="{{ page.url }}">[{{page.url}}]</a><br /><small>{{ page.url }}</small></li>
+                {% for node in site.pages %}
+                {% if node.exclude != true %}
+                {% if page.url == node.url %}
+                    <li class="active">
+                        {% else %}
+                    <li>
+                {% endif %}
+                    <a href="{{ node.url }}">{{node.title}}</a>
+                </li>
+                {% endif %}
                 {% endfor %}
             </ul>
         </div>

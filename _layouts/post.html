@@ -4,22 +4,21 @@ layout: default
 
 <div class="row">
 
-    <div class="post-header clearfix">
-
-        <h1 class="post-title float-left" itemprop="name headline">{{ page.title }}</h1>
-
-        <p class="post-meta float-right">
-            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date:
-                "%b
-                %-d, %Y" }}
-            </time>
-            {% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span
-                itemprop="name">{{ page.author }}</span></span>{% endif %}
-        </p>
-
-    </div>
-
     <div class="post-content">
+
+        <div class="post-header clearfix text-right">
+
+            <p class="post-meta">
+                <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date:
+                    "%b
+                    %-d, %Y" }}
+                </time>
+                {% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span
+                    itemprop="name">{{ page.author }}</span></span>{% endif %}
+            </p>
+
+        </div>
+
         {{ content }}
     </div>
 </div>

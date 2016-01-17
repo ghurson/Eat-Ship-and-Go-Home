@@ -1,24 +1,37 @@
 header {
-  padding: 50px 0;
+  padding: 25px 0 0;
 
   .logotype {
     padding-bottom: 20px;
     h1 {
       font-family: "Poiret One", serif;
       text-align: center;
+
+      a:hover {
+        text-decoration: none;
+      }
+
     }
   }
 
   .menu {
 
+    border-bottom: 1px solid $gray;
+
     ul {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       margin: 0;
     }
 
     li {
       list-style-type: none;
+      padding: 15px;
+
+      &.active{
+        background: $light-gray;
+      }
+
     }
 
   }

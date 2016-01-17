@@ -8,12 +8,14 @@
 
             <h3>pages</h3>
             <ul>
-                {% for page in site.pages %}
+                {% for node in site.pages %}
+                {% if node.publish != false %}
                 <li>
-                    <a href="{{ page.url }}">
-                        {{ page.title }} [{{ page.url }}]
+                    <a href="{{ node.url }}">
+                        {{ node.title }} [{{ node.url }}]
                     </a>
                 </li>
+                {% endif %}
                 {% endfor %}
             </ul>
         </div>
