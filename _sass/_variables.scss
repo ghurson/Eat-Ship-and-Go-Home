@@ -12,3 +12,13 @@ $light-gray: #f5f5f5;
   justify-content: center;
   align-items: center;
 }
+
+@mixin content_row(){
+  width: 80%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+@mixin display_font(){
+  font-family: "Poiret One", serif;
+}

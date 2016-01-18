@@ -1,0 +1,17 @@
+{
+  "name": "tsd-jekyll-and-gulp",
+  "version": "0.2.0",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-htmlmin": "^1.3.0",
+    "gulp-minify-css": "^1.2.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.1",
+    "node-spawn": "0.0.7",
+    "path": "^0.12.7"
+  }
+}

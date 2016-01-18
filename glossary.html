@@ -1,0 +1,21 @@
+---
+layout: page
+title: glossary
+permalink: glossary/
+---
+
+<div class="row">
+    <div class="column">
+        <p>
+            Featuring {{ site.data.glossary || size }} words.
+        </p>
+    </div>
+
+    {% for item in site.data.glossary %}
+    <div class="column">
+        {{ item.word }}
+    </div>
+    {% endfor %}
+</div>
+
+

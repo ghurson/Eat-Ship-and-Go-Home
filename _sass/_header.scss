@@ -1,8 +1,9 @@
 header {
-  padding: 25px 0 0;
 
   .logotype {
-    padding-bottom: 20px;
+    padding-top: $spacing-unit;
+    padding-bottom: $spacing-unit;
+
     h1 {
       font-family: "Poiret One", serif;
       text-align: center;
@@ -26,7 +27,7 @@ header {
 
     li {
       list-style-type: none;
-      padding: 15px;
+      padding: 45px;
 
       &.active{
         background: $light-gray;

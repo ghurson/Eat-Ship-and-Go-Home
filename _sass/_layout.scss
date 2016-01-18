@@ -168,7 +168,9 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .page-heading {
@@ -200,13 +202,17 @@
  * Posts
  */
 .post-header {
+    padding: $spacing-unit 0;
+    background: $light-gray;
     margin-bottom: $spacing-unit;
+    border-bottom: 1px solid $gray;
+
+    .content {
+        @include content_row;
+    }
 
     .post-meta {
         margin: 0;
-        border: 1px solid $light-gray;
-        border-top: none;
-        padding: 5px;
     }
 
 }
@@ -222,9 +228,7 @@
 }
 
 .post-content {
-    width: 80%;
-    max-width: 1100px;
-    margin: auto;
+    @include content_row;
 
     h2 {
         font-size: 32px;
@@ -252,7 +256,6 @@
 }
 
 .blog-excerpt {
-    background: white;
     border-bottom: 1px solid $gray;
     padding: 30px 0;
     @include transition-all;
@@ -283,10 +286,28 @@
     text-align: center;
 
     h1 {
-        font-size: 100px;
+        @include display_font;
+        font-size: 60px;
         color: $gray;
         margin: 0;
     }
+
+}
+
+
+/*
+ *  Home Page
+ */
+
+
+.home-page-content {
+
+
+    h2 {
+        @include display_font;
+        font-size: 45px;
+    }
+
 }
 
 /*
