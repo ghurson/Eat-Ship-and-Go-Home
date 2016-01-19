@@ -197,58 +197,114 @@ $bystanders = new array($nick, $chris, $colm);
 foreach($bystanders as $person):
   cast_judgement($person);
 endforeach;
+
+// Alas, we are complete.
   
 ?>
 
-
 {% endhighlight %}
 
+Arrays and objects are how data structures are built in all programming languages - they're pretty universal concepts. At first, knowing the differences between them can be pretty tricky, and people don't always use them correctly in their code.
 
+### Looping
 
+In the example above, I glossed over the concepts behind looping through arrays. I'm going to continue that tradition here.
 
-### Arrays
-
-An array is a group of variables.
-
-
-### Objects
-
-An object is a set of data that describes a whole. This is used as a tool to group large sets of data together. By setting properties of the object, we can refer to the entire collection of data with one variable. This becomes very useful in dynamic environments, where we might need to cycle through a list of post titles to create a menu for example.
-
+Shorthand examples:
 
 {% highlight php %}
 
 <?php
 
-$car = new Car(
+$bystanders = new Array($chris, $nick, $colm);
 
-    'color' => 'red',
-    'make' => 'dodge',
-    'model' => 'viper',
-    'year' => 1979
+// there are two ways (and one shortcut) that you can write out
+// foreach loops. you can use the curly brackets, you can use
+// the colon in the beginning and the endforeach command at the
+// end - I recommend you use this second way, and the reason is
+// that as your foreach and if loops get complex, you can have
+// this sea of closing tags and it's hard to keep them straight.
 
-);
+foreach($bystanders as $victim) {
+ cast_judgement($victim);
+}
 
-// At this point, you would be able to access information
-// about the car using the '->' tool. The variable name
-// is what it is declared as.
+foreach($bystanders as $victim):
+ cast_judgement($victim);
+endforeach;
 
-print $car->color;
 
-// This will output the string 'red'.
+// if you're only going to execute one line of code from your
+// foreach loop, you can skip the endforeach altogether.
 
-$car->color = 'orange';
+foreach($bystanders as $victim) cast_judgement($victim);
 
-// Congratulations. You just painted your car.
+// which may also be written as
+
+foreach($bystanders as $victim)
+ cast_judgement($victim);
+
+// all of the above examples are also true for if statements.
+
+if($value_is_true) {
+  cast_judgement($victim);
+}
+
+if($value_is_true):
+  cast_judgement($victim);
+endif;
+
+if($value_is_true) cast_judgement($victim);
+
+// which, again may also be written as
+
+if($value_is_true)
+ cast_judgement($victim);
+
+// in addition to these shortcuts, there is a very neat way
+// of writing out if statements. a full if / then loop looks
+// like this
+
+if($value_is_true):
+  execute_function();
+elseif($other_value_is_true):
+  execute_another_function();
+else:
+  execute_a_third_function();
+endif;
+
+// Now, we dont always have this many options - there are many
+// times where we just want to toggle a variable between two
+// options
+
+if($value_is_true):
+  $dependant_variable = 5;
+else:
+  $dependant_variable = 10;
+endif;
+
+// There's a cleaner way to write this. We can write a ternary
+// statement.
+
+$dependant_variable = $value_is_true ? 5 : 10;
+
+// What we're doing here is setting a value based on a condition.
+// The condition comes between the equals and the question mark
+// After that, we have what the outcome will be, separated by the
+// colon. What comes before the colon will be the final value if
+// the condition is true, and what comes after will be set if the
+// condition is false. If the value is true, the dependant value
+// will be set to 5, otherwise, 10.
+
 
 ?>
 
+
 {% endhighlight %}
 
-
-### Looping
-
 ### Conditionals
+
+
 
 ## Templating
 
