@@ -370,7 +370,13 @@ By default, any post object in wordpress is going to have the same data fields. 
 By configuring the custom fields on your post type, you can add fields for the client to enter a phone number and an email address directly into the post data.
 
 
+## PHPStorm
 
+### Git Inegration
+
+### Keyboard Shortcuts
+
+### Project Definitions
 
 
 
