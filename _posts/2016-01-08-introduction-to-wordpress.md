@@ -435,11 +435,4 @@ TSD\Display::say_hi_to_admin();
 
 The above code snippet could be placed anywhere on the page to send a message to anyone on the site who is logged in. These functions can be very helpful when you need to attach logic to a given command, without cluttering up your display files. It's important to keep a neat display file, and to keep your helper functions tucked away in your display classes. This will allow you to deliver a rich web experience without compromising the readability of your template files. This will also allow you to keep your structure flexible, for when people inevitably start requesting substantive changes to your template layout.
 
-# Glossary
-
-
-{% for term in site.data.glossary %}
-
-{{ term.word }}
-
-{% endfor %}
+Okay, that about covers it. You should be an expert by now.

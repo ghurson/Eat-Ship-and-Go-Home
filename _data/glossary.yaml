@@ -1,143 +1,148 @@
-- word: Functions
+- term: Functions
+  definition: A group of code that is given a name and can be called upon to execute with one or more optional variable arguements.
+
+- term: Variables
+  definition: A word given a value that can be manipulated through code.
+
+- term: Request
+  definition: One block of code attempting to function with another. Typically, this is your browser's web engine sending urls to other web servers with the intention of rendering the resulting return as HTML.
+
+- term: Query
+  definition: When a request is made, a query is the content of the request. This will be a set of instructions to guide the requestee to provide the desired content.
+  wordpress: The Query is the set of post objects being requested from the database by Wordpress when loading a template.
+  
+- term: Loop
+  definition: Cycling over arrayed data.
+  wordpress: The Loop is where wordpress cycles through the pages in the query. As each page is cycled through, the helper functions are activated.
+
+- term: Helper Function
+  definition: A function that exists to make another function easier to execute.
+
+- term: Conditional
+  definition: A logic switch that determines weather or not a given block of code should execute.
+
+- term: If... Then Statement
+  definition: The simplest logic gate. If the specified arguement results in a true value, a given block of code will execute. Can be paired with elseif and else to create a more complex conditional block.
+
+- term: Array
+  definition: A group of variables.
+
+- term: Object
+  definition: A collection of variables all describing a itself.
+
+- term: Notation
+  definition: A method of writing things out. Think MLA vs APA.
+
+- term: Syntax
   definition:
 
-- word: Variables
+- term: Class
+  definition: A PHP object that can run functions, called methods.
+
+- term: Constructor
+  definition: When a PHP Class is created, a given set of functions can execute.
+
+- term: Structure
   definition:
 
-- word: Request
+- term: Environment
   definition:
 
-- word: Query
+- term: Build Tool
   definition:
 
-- word: Loop
+- term: Helper Function
   definition:
 
-- word: Conditional
+- term: Declare a Variable
   definition:
 
-- word: If... Then Statement
+- term: Document
   definition:
 
-- word: Array
+- term: Server Side
   definition:
 
-- word: Object
+- term: Client Side
   definition:
 
-- word: Notation
+- term: Repository
   definition:
 
-- word: Syntax
+- term: MVC Framework
   definition:
 
-- word: Class
+- term: Model
   definition:
 
-- word: Constructor
+- term: View
   definition:
 
-- word: Structure
+- term: Controller
   definition:
 
-- word: Environment
+- term: Order of Rendering
   definition:
 
-- word: Build Tool
+- term: Installation
   definition:
 
-- word: Helper Function
+- term: Stack
   definition:
 
-- word: Declare a Variable
+- term: Server
   definition:
 
-- word: Document
+- term: Static
   definition:
 
-- word: Server Side
+- term: Dynamic
   definition:
 
-- word: Client Side
+- term: Advanced Custom Fields
   definition:
 
-- word: Repository
+- term: Flexible Layout
   definition:
 
-- word: MVC Framework
+- term: Layout
   definition:
 
-- word: Model
+- term: Frontend
   definition:
 
-- word: View
+- term: Backend
   definition:
 
-- word: Controller
+- term: Post Type
   definition:
 
-- word: Order of Rendering
+- term: Taxonomy
   definition:
 
-- word: Installation
+- term: Element
   definition:
 
-- word: Stack
+- term: Selector
   definition:
 
-- word: Server
+- term: Use Case
   definition:
 
-- word: Static
+- term: Edge Case
   definition:
 
-- word: Dynamic
+- term: Recursion
   definition:
 
-- word: Advanced Custom Fields
+- term: Command Line
   definition:
 
-- word: Flexible Layout
+- term: Walker Functions
   definition:
 
-- word: Layout
+- term: Rubber Duck Debugging
   definition:
 
-- word: Frontend
-  definition:
-
-- word: Backend
-  definition:
-
-- word: Post Type
-  definition:
-
-- word: Taxonomy
-  definition:
-
-- word: Element
-  definition:
-
-- word: Selector
-  definition:
-
-- word: Use Case
-  definition:
-
-- word: Edge Case
-  definition:
-
-- word: Recursion
-  definition:
-
-- word: Command Line
-  definition:
-
-- word: Walker Functions
-  definition:
-
-- word: Rubber Duck Debugging
-  definition:
-
-- word: Ternary Statement
+- term: Ternary Statement
   definition:

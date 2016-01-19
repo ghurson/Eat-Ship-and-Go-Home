@@ -5,15 +5,19 @@ permalink: glossary/
 ---
 
 <div class="row">
-    <div class="column">
+    <div class="column text-center">
         <p>
-            Featuring {{ site.data.glossary || size }} words.
+            Terms 0 through {{ site.data.glossary || size }}
         </p>
     </div>
 
-    {% for item in site.data.glossary %}
+    {% for word in site.data.glossary %}
     <div class="column">
-        {{ item.word }}
+        <p><strong>{{ word.term }}</strong> {{word.definition}}</p>
+        {% if word.wordpress %}
+        <p><strong>In Wordpress:</strong> {{ word.wordpress }}</p>
+        {% endif %}
+        <br>
     </div>
     {% endfor %}
 </div>
