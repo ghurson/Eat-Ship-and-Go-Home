@@ -302,9 +302,6 @@ $dependant_variable = $value_is_true ? 5 : 10;
 
 {% endhighlight %}
 
-### Conditionals
-
-
 
 ## Templating
 
