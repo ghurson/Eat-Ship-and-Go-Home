@@ -146,3 +146,6 @@
 
 - term: Ternary Statement
   definition:
+
+- term: Scope Creep
+  definition: As a project goes through the development process, people think about neat little features they want added. This expands the scope of the work required, and is called scope creep.
