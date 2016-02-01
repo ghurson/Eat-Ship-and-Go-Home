@@ -438,6 +438,12 @@ TSD\Display::say_hi_to_admin();
 
 The above code snippet could be placed anywhere on the page to send a message to anyone on the site who is logged in. These functions can be very helpful when you need to attach logic to a given command, without cluttering up your display files. It's important to keep a neat display file, and to keep your helper functions tucked away in your display classes. This will allow you to deliver a rich web experience without compromising the readability of your template files. This will also allow you to keep your structure flexible, for when people inevitably start requesting substantive changes to your template layout.
 
+## Things to watch out for
+
+### Migrating content
+
+Wordpress stores things like custom post meta and featured images in a different table than the standard post data, and does this linking using the IDs of posts and items in the media library. When you are moving posts between WP installs, it's very likely that you're going to find things like featured images and meta fields broken. The Wordpress installation will think the links are fine, however. This means that when you query a given post for its featured image or for a meta data, WP will report that it has found the data, but when you attempt to display it - nothing will show up. The only way you can detect these things is to look in the database.
+
 ## Tricks of the Trade
 
 ### Placehold.it
