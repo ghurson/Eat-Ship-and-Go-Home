@@ -444,6 +444,28 @@ The above code snippet could be placed anywhere on the page to send a message to
 
 Wordpress stores things like custom post meta and featured images in a different table than the standard post data, and does this linking using the IDs of posts and items in the media library. When you are moving posts between WP installs, it's very likely that you're going to find things like featured images and meta fields broken. The Wordpress installation will think the links are fine, however. This means that when you query a given post for its featured image or for a meta data, WP will report that it has found the data, but when you attempt to display it - nothing will show up. The only way you can detect these things is to look in the database.
 
+### Spinning up an installation
+
+One of the things that separates the pros from the rookies is how the whole process begins. There are several ways you can do this.
+
+Create Install
+
+Create DB
+
+Back up to repo
+
+Configure ACF
+
+Get your site map
+
+Get your content
+
+Get your design
+
+Map out the architecure of the template
+
+Get to work!!
+
 ## Tricks of the Trade
 
 ### Placehold.it
